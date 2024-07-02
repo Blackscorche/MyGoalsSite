@@ -1,0 +1,114 @@
+.welcome-screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    margin-top: 3rem;
+
+}
+
+.content{
+    max-width: 700px;
+}
+
+.title{
+    color: rgb(235, 33, 73);
+    opacity: .8;
+    font-weight: 700;
+    margin-bottom: 19px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:.6px  rgb(231, 6, 51);
+    font-weight:600;
+    width: 270px;
+    border-right: 2px solid;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-color: rgb(231, 6, 51);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20);
+        cursor: .4s  step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50%{border-color: transparent}
+}
+
+@keyframes typing{
+    from { width: 0}
+}
+
+.greetings{
+    color: rgb(214, 21, 59);
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.content p{
+    color: rgb(194, 94, 114);
+    opacity: .9;
+    margin-bottom: 20px;
+}
+
+.right-side{
+    margin-bottom: 3rem;
+}
+
+.profile{
+    width: 350px;
+    height:350px;
+    border-radius: 60% 40% 30% 70%/60% 30% 705 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, rgb(214, 21, 59),rgb(126, 75, 85));
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+
+    50%{
+        border-radius: 30% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+    }
+}
+
+.profile img {
+    max-width: 100%; /* Ensures the image scales down with the screen size */
+    height: auto; /* Maintains the aspect ratio */
+    padding-top: 18px;
+}
+
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px rgb(214, 21, 59);
+    z-index: -100;
+}
+
+
+
+@media(width<900px){
+    .welcome-screen{
+        flex-direction: column;
+    }
+
+    .right-side{
+        order: -1;
+    }
+    
+
+    
+}
+

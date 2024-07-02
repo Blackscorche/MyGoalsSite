@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Programming Goals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="welcomeScreen.css">
+    <link rel="stylesheet" href="goalsSec.css">
+    <link rel="stylesheet" href="slack-details-section.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/979872ffa9.js" crossorigin="anonymous"></script>
+</head>
+<body onload="timeFunc()">
+
+    <div class="header" data-aos="fade-up" data-aos-duration="1000">
+        <a href="#welcome-screen" class="logoLink">
+            <div class="logo">
+                <span class="scorche">Tech</span>Goals
+             </div>
+        </a>
+
+        <ul class="header-links">
+            <li><a href="#welcome-screen">Home</a></li>
+            <li><a href="#goals-section">Goals</a></li>
+            <li><a href="#slack-details-section">Details</a></li>
+        </ul>
+
+        <div class="right-side-icons">
+            <div class="contact-btn">
+                 <a href="https://hng.tech/learn">Learn at HNG</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="welcome-screen" class="welcome-screen">
+        <span class="blur"></span>
+        <div class="content">
+            <span class="blur"></span>
+            <h3 class="title">CREATE YOUR SITE LIKE A PRO</h3>
+            <h1 class="greetings">Hi there, I'm <span class="scorche">Blackscorche</span>, An intern from HNG</h1>
+            <p>
+                Welcome to my goal-driven platform where I outline my ambitions for the next two years in the tech industry.
+            </p>
+            <br>
+        </div>
+
+        <div class="right-side" data-aos="fade-up" data-aos-duration="1000">
+            <div class="profile">
+                <img src="images/abu.png" alt="Profile-image" data-testid="slackProfilePicture">
+            </div>
+        </div>
+    </section>
+
+    <section id="goals-section" class="Goals-section">
+        <h2 class="scorche">My Tech Goals</h2>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Goal</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Master Advanced JavaScript</td>
+                    <td>Deepen understanding of modern JavaScript features (ES6+). Gain expertise in asynchronous programming (promises, async/await).</td>
+                </tr>
+                <tr>
+                    <td>Become Proficient in React</td>
+                    <td>Build complex, stateful applications using React. Learn and apply React hooks and context API for state management. Optimize React applications for performance.</td>
+                </tr>
+                <tr>
+                    <td>Develop Full-Stack Applications</td>
+                    <td>Gain proficiency in backend technologies (Node.js, Express). Learn to design and manage databases (SQL and NoSQL). Deploy full-stack applications using cloud services (AWS, Heroku).</td>
+                </tr>
+                <tr>
+                    <td>Contribute to Open Source</td>
+                    <td>Find and contribute to open-source projects on GitHub. Collaborate with other developers and contribute meaningful code.</td>
+                </tr>
+                <tr>
+                    <td>Master Mobile App Development</td>
+                    <td>Learn to develop cross-platform mobile applications using React Native or Flutter. Implement complex features such as push notifications, offline storage, and authentication.</td>
+                </tr>
+                <tr>
+                    <td>Improve Problem-Solving Skills</td>
+                    <td>Regularly practice coding challenges on platforms like LeetCode, HackerRank, and CodeWars. Participate in coding competitions and hackathons.</td>
+                </tr>
+                <tr>
+                    <td>Learn DevOps Basics</td>
+                    <td>Understand and implement CI/CD pipelines. Gain knowledge of containerization tools like Docker and orchestration tools like Kubernetes.</td>
+                </tr>
+                <tr>
+                    <td>Enhance UI/UX Design Skills</td>
+                    <td>Learn the principles of user-centered design. Gain proficiency in design tools like Figma or Adobe XD. Implement responsive and accessible designs.</td>
+                </tr>
+                <tr>
+                    <td>Build a Personal Portfolio</td>
+                    <td>Create a personal website showcasing projects and skills. Document the learning journey and projects through blog posts.</td>
+                </tr>
+                <tr>
+                    <td>Network and Collaborate</td>
+                    <td>Attend tech meetups, webinars, and conferences. Engage with the developer community on social media platforms like LinkedIn and Twitter.</td>
+                </tr>
+                <tr>
+                    <td>Learn New Programming Languages</td>
+                    <td>Pick up new languages relevant to your goals, such as Python for data science or Go for system programming. Build small projects to reinforce learning.</td>
+                </tr>
+                <tr>
+                    <td>Earn Certifications</td>
+                    <td>Obtain certifications in key areas like web development, cloud computing, or data science.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section>
+            <h2 class="scorche">My Slack Details</h2>
+            <table class="content-table">
+                <tbody>
+                    <tr>
+                        <td>Slack Display Name:</td>
+                        <td data-testid="slackDisplayName">Blackscorche</td>
+                    </tr>
+                    <tr>
+                        <td>Slack Email:</td>
+                        <td data-testid="slackEmail">issaabu399@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Current Time UTC:</td>
+                        <td data-testid="currentTimeUTC"></td>
+                    </tr>
+                    <tr>
+                        <td>Current Day:</td>
+                        <td data-testid="currentDay"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <div class="finals-links">
+
+            <div class="link">
+                <h4>Keyword Dog Link</h4>
+                <p>
+                    The Quickest Way to Dominate Search Rankings
+                </p>
+                <button>
+                    <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+                </button>
+                
+            </div>
+           
+
+            <div class="link">
+                <h4>Scrape Any Web Link Link</h4>
+
+                <p class="scrape">
+                    Scrape any website, right from your desktop
+                </p>
+                <button>
+                    <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+                </button>
+                
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="countdown.js"></script>
+
+</body>
+</html>

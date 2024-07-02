@@ -1,0 +1,117 @@
+.header{
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 6px;
+    left:6px ;
+    right: 6px;
+    padding: 30px 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+    z-index: 9999999;
+}
+
+
+.header-links{
+    align-items: center;
+}
+.header-links{
+    display: flex;
+    
+
+}
+
+li{
+    list-style: none;
+    gap:2rem;
+    font-weight: 600;
+}
+
+.header-links li a{
+    text-decoration: none;
+    color: rgb(240, 25, 68);
+    padding: 0 10px;
+    position: relative;
+
+    
+}
+
+
+
+.header-links li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width:0%;
+    height: 3px;
+    background-color: rgb(240, 25, 68);
+    transition: all .3s;
+    
+}
+
+.header-links li a:hover:before{
+    width: 80%;
+}
+
+
+.header .logo{
+    font-size: 19px;
+    font-weight: 600;
+
+}
+
+.scorche{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:.6px  rgb(231, 6, 51);
+    
+}
+
+.contact-btn a{
+    border: none;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style:solid ;
+    border-color: rgb(231, 6, 51);
+    padding: .4rem .7rem ;
+    transition: all .4s;
+    text-decoration: none;
+    color: rgb(231, 6, 51);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.contact-btn a:hover{
+    color: white;
+    background-color: rgb(231, 6, 51);
+
+}
+
+@media(width<700px){
+    .header-links{
+        display: none;
+    }
+    
+
+    
+}
+
+.right-side-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side-icons i{
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.logoLink{
+    text-decoration: none;
+    color: black;
+}
